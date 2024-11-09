@@ -1,0 +1,6 @@
+Impresora: FlashForge 5M Pro
+Material: High-Speed PLA (MAGENTA)
+Infill: 15%
+Layer Height: 0.2mm
+Supports: 40% touch platform only
+Rafts: No
