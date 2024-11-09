@@ -39,7 +39,7 @@ int angleToPulse(int angle) {
   int pulseUs = map(angle, 0, 180, SERVOMIN, SERVOMAX);
 
   // Convierte el pulso en microsegundos a un valor que el PCA9685 entienda
-  int pulsePCA9685 = pulseUs * 4096 / 20000;  // Ajuste para 50 Hz (20 ms por ciclo)
+  int pulsePCA9685 = pulseUs * 4096 / 20000; 
   
   return pulsePCA9685;}
 
@@ -85,7 +85,7 @@ void calculateAnglesInverted(float x, float y, int &femurAngle, int &tibiaAngle)
 void setup() {
   Serial.begin(115200);
   pwm.begin();
-  pwm.setPWMFreq(50);  // Configura la frecuencia para los servos (50 Hz)
+  pwm.setPWMFreq(50);  /
 }
 
 // Variables para definir la trayectoria de marcha para patas 1, 3 y 2, 4
